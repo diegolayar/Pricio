@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ASD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ze-df-ntH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aqc-hv-11g">
+                                <rect key="frame" x="82" y="322.5" width="250" height="251.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="I2M-hZ-kgy"/>
+                                    <constraint firstAttribute="width" constant="250" id="Yh2-ol-NVS"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="ultraLight"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnP-B9-Jdv">
+                                <rect key="frame" x="25" y="752" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="QXo-uo-BIC"/>
+                                    <constraint firstAttribute="width" constant="75" id="V6q-Xi-2Zf"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="cart.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                </state>
+                                <connections>
+                                    <action selector="CarritoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9B-EL-CtJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-yP-fWg">
+                                <rect key="frame" x="169.5" y="752" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="J2t-lg-U7J"/>
+                                    <constraint firstAttribute="height" constant="75" id="KP1-Ht-ANA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="bolt.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="flash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAY-9y-gVU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k72-tt-PN6">
+                                <rect key="frame" x="314" y="752" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="4bW-in-wzn"/>
+                                    <constraint firstAttribute="height" constant="75" id="VFq-xn-aO5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="mappin.and.ellipse" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openStoresButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Utf-Fc-rk5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdZ-Y2-odF">
+                                <rect key="frame" x="146.5" y="79" width="121.5" height="53"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pricio">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="45" name="Raleway-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9A-BV-jyt">
+                                <rect key="frame" x="25" y="69" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="1gE-RG-gNf"/>
+                                    <constraint firstAttribute="height" constant="75" id="6dj-8V-elE"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateAdminMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOw-aA-kxk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0Q-y3-Q8V">
+                                <rect key="frame" x="314" y="74" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="74A-gr-JBu"/>
+                                    <constraint firstAttribute="width" constant="75" id="Wrd-mF-041"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="27"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="VEF">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="29" weight="thin"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleCoin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKw-mh-ImI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tgG-yP-fWg" secondAttribute="bottom" constant="35" id="1ki-0h-km8"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ze-df-ntH" secondAttribute="trailing" id="5D2-K1-slU"/>
+                            <constraint firstItem="9Ze-df-ntH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6c6-Fe-aHo"/>
+                            <constraint firstItem="9Ze-df-ntH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CIy-Iv-UPh"/>
+                            <constraint firstItem="ZdZ-Y2-odF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="DQf-EH-BwC"/>
+                            <constraint firstItem="XnP-B9-Jdv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="DzT-t7-37v"/>
+                            <constraint firstAttribute="bottom" secondItem="9Ze-df-ntH" secondAttribute="bottom" id="IIu-9X-SEX"/>
+                            <constraint firstItem="L9A-BV-jyt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Mgo-DK-UNy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XnP-B9-Jdv" secondAttribute="bottom" constant="35" id="OTM-AM-fup"/>
+                            <constraint firstItem="aqc-hv-11g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qk9-7n-yxk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l0Q-y3-Q8V" secondAttribute="trailing" constant="25" id="RlV-u1-jbk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k72-tt-PN6" secondAttribute="bottom" constant="35" id="afy-WU-Y6l"/>
+                            <constraint firstItem="L9A-BV-jyt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ai9-ZQ-9xx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k72-tt-PN6" secondAttribute="trailing" constant="25" id="ly0-ha-SJa"/>
+                            <constraint firstItem="l0Q-y3-Q8V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="oP1-H8-CqH"/>
+                            <constraint firstItem="ZdZ-Y2-odF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ptx-Zn-Bpv"/>
+                            <constraint firstItem="tgG-yP-fWg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qg4-Cn-o2E"/>
+                            <constraint firstItem="aqc-hv-11g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uLB-g4-AAJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CarritoBotonCorners" destination="XnP-B9-Jdv" id="WNx-Yr-z3p"/>
+                        <outlet property="LeftButton" destination="k72-tt-PN6" id="zzq-BR-Of0"/>
+                        <outlet property="adminButton" destination="L9A-BV-jyt" id="uAv-y6-78B"/>
+                        <outlet property="coinToggler" destination="l0Q-y3-Q8V" id="CJK-tz-0mO"/>
+                        <outlet property="cuatroEsquinas" destination="aqc-hv-11g" id="pN2-9A-icC"/>
+                        <outlet property="flashh" destination="tgG-yP-fWg" id="kxl-9z-THm"/>
+                        <outlet property="previewView" destination="9Ze-df-ntH" id="o3S-uM-7y0"/>
+                        <outlet property="tituloPricio" destination="ZdZ-Y2-odF" id="NZc-iQ-qU2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="bolt.fill" catalog="system" width="101" height="128"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
